@@ -16,6 +16,7 @@
     <MermaidDiagram Definition=@treediagram  />
 }
 
+<h1>@newValue</h1>
 @* <br /> <textarea readonly rows="10" cols="50">@treediagram</textarea> *@
 
 @code {
@@ -50,7 +51,7 @@
 
     protected override void OnInitialized()
     {
-        //postrender = true;
+        postrender = true;
     }
 
 
