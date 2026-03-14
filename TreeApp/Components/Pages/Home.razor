@@ -16,8 +16,8 @@
     <MermaidDiagram Definition=@treediagram  />
 }
 
-<h1>@newValue</h1>
-@* <br /> <textarea readonly rows="10" cols="50">@treediagram</textarea> *@
+@* <h1>@newValue</h1> *@
+<br /> <textarea readonly rows="10" cols="50">@treediagram</textarea>
 
 @code {
 
@@ -25,7 +25,7 @@
     private BinaryTree tree = new BinaryTree();
     private string newValue = "";
 
-    private string treediagram = @"test";
+    private string treediagram = "graph TD\n empty[\"(empty tree)\"]";
 
     private void HandleKeyDown(KeyboardEventArgs e)
     {
